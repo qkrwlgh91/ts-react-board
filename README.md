@@ -4,7 +4,7 @@
 2. SCSS
 3. BEM
 4. react-player
-5. 
+5. react-icons
 
 
 

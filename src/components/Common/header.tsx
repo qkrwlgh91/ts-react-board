@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
+import { BsPeopleCircle } from 'react-icons/bs';
 
 function header() {
     return (
@@ -8,7 +10,9 @@ function header() {
                     <Link to="/">JH BOARD</Link>
                 </li>
                 <li>
-                    <Link to="/signUp">회원가입</Link>
+                    <button className="toggleBtn">
+                        <FaBars />  <BsPeopleCircle className="bpc" />
+                    </button>
                 </li>
             </ul>
     )

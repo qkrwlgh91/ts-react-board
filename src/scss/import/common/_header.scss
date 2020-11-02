@@ -7,6 +7,19 @@
     justify-content: space-between;
     li {
         margin: 0 10rem;
+        .toggleBtn {
+            display: flex;
+            border: 1px solid grey;
+            border-radius: 2rem;
+            padding: 0.5rem 1rem;
+            font-size: 1.3rem;
+            align-items: center;
+            justify-content: space-between;
+            .bpc {
+                font-size: 2rem;
+                margin-left: 1rem;
+            }
+        }
     }
     
 }
