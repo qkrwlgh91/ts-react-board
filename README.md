@@ -1,3 +1,18 @@
+# This is board I made for practice, react, redux, typescript, scss, SPA, and some syntax
+```
+1. Ducks pattern
+2. 
+
+
+
+
+
+
+```
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
