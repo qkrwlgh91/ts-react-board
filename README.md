@@ -1,7 +1,7 @@
 # This is board I made for practice, react, redux, typescript, scss, SPA, and some syntax
 ```
 1. Ducks pattern
-2. 
+2. SCSS
 
 
 
