@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 function header() {
     return (
-            <ul>
+            <ul className='menuList'>
                 <li>
                     <Link to="/">JH BOARD</Link>
                 </li>
                 <li>
-                    <Link to="/board">게시판</Link>
+                    <Link to="/signUp">회원가입</Link>
                 </li>
             </ul>
     )

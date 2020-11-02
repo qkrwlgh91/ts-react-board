@@ -1,7 +1,7 @@
 .homeMovie {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 92vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -22,11 +22,12 @@
         width: 100%;
         height: 100%;
         background: #ffffff;
-        font-size: 30vw;
+        font-size: 25vw;
         text-align: center;
         text-transform: uppercase;
         color: #000;
-        line-height: 100vh;
+        line-height: 90vh;
         mix-blend-mode: screen;
+        text-decoration: underline;
     }
 }
