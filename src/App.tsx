@@ -1,8 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Board from './pages/Board';
 import Header from './components/Common/header';
+import {Home, Board } from './pages';
 
 
 function App() {
