@@ -5,6 +5,7 @@ import { BsPeopleCircle } from 'react-icons/bs';
 
 function header() {
     return (
+        <>
             <ul className='menuList'>
                 <li>
                     <Link to="/">JH BOARD</Link>
@@ -15,6 +16,12 @@ function header() {
                     </button>
                 </li>
             </ul>
+            <div className="menuPop">
+                <Link to="/signIn">회원가입</Link>
+                <Link to="/login">로그인</Link>
+            </div>
+        </>
+            
     )
 }
 
