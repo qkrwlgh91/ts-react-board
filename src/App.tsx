@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/Common/header';
-import {Home, Board } from './pages';
+import {Home, Board, SignIn } from './pages';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <Switch>
         <Route path="/" exact={true} component={Home} />
         <Route path="/board" component={Board} />
+        <Route path="/signIn" component={SignIn} />
       </Switch>
     </div>
   );
