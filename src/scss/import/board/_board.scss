@@ -1,0 +1,14 @@
+.boardBox {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2ft 1ft;
+    margin: 3rem 10rem;
+    &__detail {
+        grid-column: 1 / 3;
+        background: lightblue;
+    };
+    &__list {
+        grid-column: 3 / 4;
+        background: plum;
+    }
+};

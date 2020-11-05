@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import BoardDetail from '../components/Board/boardDetail';
+import BoardList from '../components/Board/boardList';
 
 function Board() {
     return (
-        <div>
-            <h1>왜 아무것도 아난와</h1>
+        <div className="boardBox">
+            <BoardDetail />
+            <BoardList />
         </div>
     )
 }

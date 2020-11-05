@@ -4,11 +4,15 @@ function myBoard() {
     return (
         <>
             <header>
-                여기는 header tag 확인영역
+                내글관리
             </header> 
-            <main>
-                main tag도 가능?
-            </main>
+            <table>
+                <thead>
+                    <th>글제목</th>
+                    <th>작성일</th>
+                    <th></th>
+                </thead>
+            </table>
         </>
     )
 }
