@@ -1,22 +1,14 @@
 .menuList {
-    display: flex;
+    @include flexBox($justify-content: space-between);
     height: 8vh;
     font-size: 1.5rem;
     font-weight: 600;
-    align-items: center;
-    justify-content: space-between;
     li {
         margin: 0 10rem;
         .toggleBtn {
-            display: flex;
-            border: 1px solid grey;
-            border-radius: 2rem;
-            padding: 0.5rem 1rem;
-            font-size: 1.3rem;
-            align-items: center;
-            justify-content: space-between;
-            background: white;
-            cursor: pointer;
+            @include flexBox($justify-content: space-between);
+            @include btnInit ($border: 1px solid grey, $border-radius: 2rem, $padding: 0.5rem 1rem, $background: white );
+            font-size: 1.3rem;  
             .bpc {
                 font-size: 2rem;
                 margin-left: 1rem;
@@ -32,9 +24,7 @@
     z-index: 10000;
     height: 4rem;
     padding: 1rem 0.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexBox($justify-content: space-between);
     a{
         display: flex;
         font-size: 1rem;

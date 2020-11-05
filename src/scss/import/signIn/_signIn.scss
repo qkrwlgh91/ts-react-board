@@ -1,8 +1,5 @@
 .signInBox {
-    position: fixed;
-    left: 35%;
-    top: 20vh;
-    width: 30%;
+    @include fixedBox($left: 35%, $top: 20vh);
     height: 50vh;
     &__logo {
         width: 100%;
@@ -55,10 +52,7 @@
         }
         &--cbtn {
             width: 20%;
-            padding: 0.2rem;
-            border-radius: 0.5rem;
-            border: none;
-            background: lightblue;
+            @include btnInit($padding: 0.2rem);
             color: white;
             &:hover {
                 cursor: pointer;
@@ -67,19 +61,13 @@
             
         }
         &--btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexBox;
             button {
-                padding: 0.5rem 0.7rem;
+                @include btnInit($border-radius: 0.7rem, $padding: 0.5rem 0.7rem);
                 margin: 1rem 1rem 0.3rem 1rem;
                 width: 8rem;
-                border: none;
-                border-radius: 0.7rem;
                 font-size: 1rem;
                 color: white;
-                background: lightblue;
-                
                 &:hover {
                     background: linear-gradient(to right, rgb(240, 185, 240) 30%, violet 70%,  hotpink 100%);
                     transition-duration: 2s;

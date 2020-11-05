@@ -3,7 +3,7 @@ import MyBoardScreen from '../components/MyBoard/myBoard';
 
 function MyBoard() {
     return (
-        <div>
+        <div className="myBoard">
             <MyBoardScreen />
         </div>
     )

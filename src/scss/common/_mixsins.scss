@@ -5,7 +5,7 @@
     bottom: $bottom;
     right: $right;
     background: rgba(0, 0, 0, 0.3);
-  }
+  };
 
 @mixin modalPop($position: fixed, $top: 50%, $left: 50%, $width: 37%, $border-radius: 1rem, $background: white, $box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.7)) {
     position: $position;
@@ -16,4 +16,25 @@
     border-radius: $border-radius;
     background: $background;
     box-shadow: $box-shadow;
-  }
+  };
+
+  @mixin flexBox ($display: flex, $justify-content: center, $align-items: center) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  };
+
+  @mixin fixedBox ($left: 50%, $top: 50%, $width: 30%) {
+    position: fixed;
+    left: $left;
+    top: $top;
+    width: $width;
+  };
+
+  @mixin btnInit ($border: none, $border-radius: 0.5rem, $padding: 0.5rem 1rem, $background: lightblue ) {
+    border: $border;
+    border-radius: $border-radius;
+    padding: $padding;
+    background: $background;
+    cursor: pointer;
+  };

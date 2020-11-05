@@ -3,9 +3,7 @@
     width: 100%;
     height: 92vh;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox;
     &__player {
         position: absolute;
         top: 0;
