@@ -1,14 +1,65 @@
 .boardBox {
     position: relative;
     display: grid;
-    grid-template-columns: 2ft 1ft;
-    margin: 3rem 10rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    margin: 1rem 10rem;
     &__detail {
         grid-column: 1 / 3;
-        background: lightblue;
+        border: 2px solid lightblue;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        padding: 1rem;
+        &--info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 1rem;
+            &-img {
+                grid-column: 1 / 2;
+                height: 20vh;
+                background: lightblue;
+                border-radius: 1rem;
+            }
+            &-cont {
+                grid-column: 2 / 4;
+                height: 20vh;
+                padding: 1rem 1.5rem;
+                box-sizing: border-box;
+                h1 {
+                    display: flex;
+                    font-size: 1.7rem;
+                    font-weight: 800;
+                    height: 7.5vh;
+                    white-space: normal;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    text-align: left;
+                    line-height: 2rem;
+                    word-wrap: break-word;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    
+                };
+                p {
+                    font-size: 1.15rem;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+        &--content {
+            padding: 1rem;
+            background: lightgreen;
+            min-height: 50vh;
+            border-top: 1px solid lightblue;
+            margin-bottom: 1rem;
+        }
     };
     &__list {
         grid-column: 3 / 4;
-        background: plum;
+        border: 2px solid plum;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        margin-left: 1rem;
+        padding: 1rem;
     }
 };
