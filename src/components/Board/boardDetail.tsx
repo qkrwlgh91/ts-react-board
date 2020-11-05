@@ -16,7 +16,7 @@ function boardDetail() {
                 </div>
             </div>
             <div className="boardBox__detail--content">
-                dfjkghfds;ughsd;fguhsdfguhds
+                이 영역은 작성 내용이 작성되는 곳입니다.
             </div>
             <Command />
         </div>

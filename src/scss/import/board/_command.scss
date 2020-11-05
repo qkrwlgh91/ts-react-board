@@ -1,3 +1,34 @@
-.commnadBox {
+.commandBox {
     position: relative;
+    background: lightgoldenrodyellow;
+    border-radius: 1rem;
+    padding: 1rem;
+    &__writer {
+        margin: 0.5rem 0 0.5rem 0.5rem;
+    }
+    textarea {
+        border-style: none;
+        width: 87.5%;
+        font-size: 1.1rem;
+        box-sizing: border-box;
+        min-height: 10vh;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        resize: none;
+    }
+    &__wbtn {
+        @include btnInit($padding: 0.5rem 0, $background: #F5D0A9);
+        width: 10%;
+        position: absolute;
+        bottom: 1.2rem;
+        right: 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        color: white;
+        &:hover {
+            cursor: pointer;
+            background: linear-gradient(to right, #F8E0F7 30%, #F781F3 70%,  #F781BE 100%);
+        }
+    }
 }
