@@ -18,8 +18,11 @@
 // 글관리 화면
 @import "import/myBoard/myBoard";
 
-// 게시판 화면
+// 게시판 화면 && 게시판 리스트 영역
 @import "import/board/board";
+
+// 게시판 리스트
+@import "import/board/boardList";
 
 // 댓글 part
 @import "import/board/command";
