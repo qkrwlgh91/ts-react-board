@@ -1,5 +1,6 @@
 import React from 'react';
 import { Commands } from '../../modules/commands';
+import { IoMdReturnRight } from 'react-icons/io';
 
 type CommandProps = {
     command: Commands;
@@ -7,13 +8,15 @@ type CommandProps = {
 
 function CommandList({command}: CommandProps) {
     return (
-        <div>
-            <ul>
-                <li>{command.id}</li>
-                <li>{command.cWriter}</li>
-                <li>{command.cDate}</li>
-                <li>{command.cContent}</li>
-            </ul> 
+        <div className="commandListBox">
+            <div className="commandListBox__header">
+                <p><IoMdReturnRight />  {command.cWriter}</p>
+                <p>{command.cDate}</p>
+            </div>
+            <div className="commandListBox__context">
+            <span >{command.cContent}</span>
+            </div>
+            <button className="commandListBox__cbtn">삭제</button>
         </div>
     )
 }
