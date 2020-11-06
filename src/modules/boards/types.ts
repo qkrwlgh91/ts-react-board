@@ -4,6 +4,7 @@ import * as actions from './actions';
 export type BoardAction = ActionType<typeof actions>;
 
 export type Board = {
+    id: number;
     writer: string;
     wDate: string;
     wTitle: string;

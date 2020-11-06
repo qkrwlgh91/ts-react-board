@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import boards from './boards'
+import boards from './boards';
+import commands from './commands';
 
 const rootReducer = combineReducers({
-    boards
+    boards,
+    commands
 });
 
 export default rootReducer;

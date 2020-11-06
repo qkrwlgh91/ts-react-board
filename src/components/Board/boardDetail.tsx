@@ -1,7 +1,12 @@
 import React from 'react';
 import Command from './Command';
+import CommandList from './CommandList';
+import { Commands } from '../../modules/commands';
+import useCommand from '../../hooks/useCommands';
 
 function BoardDetail() {
+    const commands: Commands[] = useCommand();
+
     return (
         <div className="boardBox__detail">
             <div className="boardBox__detail--info">
@@ -19,6 +24,11 @@ function BoardDetail() {
                 이 영역은 작성 내용이 작성되는 곳입니다.
             </div>
             <Command />
+            {
+                commands.map(command => (
+                    <CommandList command={command} key={command.id} />
+                ))
+            }
         </div>
     )
 }
