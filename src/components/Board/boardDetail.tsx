@@ -1,7 +1,7 @@
 import React from 'react';
-import Command from './command';
+import Command from './Command';
 
-function boardDetail() {
+function BoardDetail() {
     return (
         <div className="boardBox__detail">
             <div className="boardBox__detail--info">
@@ -23,4 +23,4 @@ function boardDetail() {
     )
 }
 
-export default boardDetail;
+export default BoardDetail;

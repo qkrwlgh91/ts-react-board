@@ -1,6 +1,6 @@
 import React from 'react';
 
-function command() {
+function Command() {
     return (
         <div className="commandBox">
             <div className="commandBox__writer">pjh9107</div>
@@ -10,4 +10,5 @@ function command() {
     )
 }
 
-export default command;
+export default Command;
+ 

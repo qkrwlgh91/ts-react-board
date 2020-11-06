@@ -1,6 +1,9 @@
 import React from 'react';
+import useBoard from '../../hooks/useBoard';
 
-function boardList() {
+function BoardList() {
+    const { writer, wDate, wTitle, count, commandCount, onAddCount } = useBoard();
+    
     return (
         <div className="boardBox__list">
             <div className="board__search">
@@ -11,15 +14,15 @@ function boardList() {
                 <input type="text"/>
                 <button>검색</button>
             </div>
-            <div className="board__list">
+            <div className="board__list" onClick={onAddCount}>
                 <div className="board__list--header">
-                    <h2>qkrwlgh</h2>
-                    <h2>2020-11-03</h2>
+                    <h2>{writer}</h2>
+                    <h2>{wDate}</h2>
                 </div>
-                <h1>게시글 첫번째 항목입니다. 두번째 칸까지 타이틀이 보입니다. 람쥐</h1>
+                <h1>{wTitle}</h1>
                 <div className="board__list--footer">
-                    <p>조회수 10</p>
-                    <p>댓글 3</p>
+                    <p>조회수 {count}</p>
+                    <p>댓글 {commandCount}</p>
                 </div>
             </div>
             <div className="board__wbtn">
@@ -32,4 +35,4 @@ function boardList() {
     )
 }
 
-export default boardList;
+export default BoardList;

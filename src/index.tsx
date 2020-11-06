@@ -4,10 +4,17 @@ import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './scss/tsReactBoard.scss';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './modules';
+
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Router>
-    <App />
+    <Provider store={store}>
+        <App />
+    </Provider>
   </Router>,
   document.getElementById('root')
 );
