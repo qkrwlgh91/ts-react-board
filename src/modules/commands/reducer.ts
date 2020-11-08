@@ -1,5 +1,6 @@
 import { CommandState} from './types';
 import { createReducer } from 'typesafe-actions';
+import { REMOVE_COMMAND } from './actions';
 
 // 초기값 설정
 const initialState: CommandState = [
@@ -23,6 +24,8 @@ const initialState: CommandState = [
     },
 ];
 
-const commands = createReducer<CommandState>(initialState);
+const commands = createReducer<CommandState>(initialState, {
+    [REMOVE_COMMAND]: (state, {payload: id}) => state.filter(command => command.id !== id)
+});
 
 export default commands;

@@ -25,7 +25,7 @@
     &--footer {
         @include flexBox($justify-content: left);
         p {
-            margin-right: 0.7rem;
+            width: 22%;
         }
     }
 
