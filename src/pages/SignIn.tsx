@@ -1,5 +1,5 @@
 import React from 'react';
-import SignInScreen from '../components/SignIn/signIn';
+import SignInScreen from '../components/SignIn/SingIn';
 
 function SignIn() {
     return (
