@@ -1,6 +1,6 @@
-import { CommandState} from './types';
+import { CommandState, CommandAction } from './types';
 import { createReducer } from 'typesafe-actions';
-import { REMOVE_COMMAND } from './actions';
+import { ADD_COMMAND, REMOVE_COMMAND } from './actions';
 
 // 초기값 설정
 const initialState: CommandState = [
@@ -24,8 +24,14 @@ const initialState: CommandState = [
     },
 ];
 
-const commands = createReducer<CommandState>(initialState, {
-    [REMOVE_COMMAND]: (state, {payload: id}) => state.filter(command => command.id !== id)
+const commands = createReducer<CommandState, CommandAction>(initialState, {
+    [REMOVE_COMMAND]: (state, {payload: id}) => state.filter(command => command.id !== id),
+    [ADD_COMMAND]: (state, {payload: cContent}) => state.concat({
+        id: Math.max(...state.map(command => command.id)) + 1,
+        cWriter: 'nonfunction',
+        cDate: '2020-11-8',
+        cContent
+    })
 });
 
 export default commands;
