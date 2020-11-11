@@ -5,7 +5,10 @@
 3. BEM
 4. react-player
 5. react-icons
-
+6. next-redux-wrapper
+7. redux-logger
+8. redux-thunk
+9. redux-devtools-extension
 
 
 
