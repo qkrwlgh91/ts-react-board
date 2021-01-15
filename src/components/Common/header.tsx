@@ -11,10 +11,14 @@ function header() {
                     <Link to="/">JH BOARD</Link>
                 </li>
                 <li>
+                    <Link  to="/testing">Testing</Link>
+                </li>
+                <li>
                     <button className="toggleBtn">
                         <FaBars />  <BsPeopleCircle className="bpc" />
                     </button>
                 </li>
+                
             </ul>
             <div className="menuPop">
                 <Link to="/signIn">회원가입</Link>
