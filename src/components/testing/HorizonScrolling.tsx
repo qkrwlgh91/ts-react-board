@@ -1,14 +1,25 @@
 import React, {useState, useEffect} from 'react';
 
+interface Person {
+    name: string;
+    age: number;
+    addr: string;
+}
+
 function HorizonScrolling() {
 
-    const [test, setTest] = useState('default');
+    const [test, setTest] = useState<string>('default');
+    const [info, setInfo] = useState<Person>({
+        name: 'ksy',
+        age: 32,
+        addr: 'dragon'
+    })
 
     useEffect(() => {
         
     }, []);
 
-    const handleTest = (e: MouseEvent): void => {
+    const handleTest = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
         
         setTest('바뀐값');
     };
@@ -19,13 +30,15 @@ function HorizonScrolling() {
     return (
         <div>
             HorizonScrolling page
-            {/* <button onClick={handleTest}>
+            <button onClick={handleTest}>
                 test value chagne
-            </button> */}
+            </button>
 
             <br />
             <hr />
             {test}
+            <hr />
+            {info.name} {info.age} {info.addr}
         </div>
     )
 }
